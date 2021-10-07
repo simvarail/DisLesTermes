@@ -1,0 +1,174 @@
+/* ------------------------------------------------
+                   IMPORT FONTS
+ ------------------------------------------------*/
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+/* ------------------------------------------------
+                     DESKTOP
+ ------------------------------------------------*/
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+/* Header */
+
+header {
+    height: 150px;
+}
+
+/* Moving background image on mousemove */
+
+#background-image {
+    display: flex;
+    justify-content: center;
+    height: calc(100% - 150px);
+    background: url('home-background.jpg');
+    width: 100%;
+}
+
+/* ------------------------------------------------
+                Coordinates section
+ ------------------------------------------------*/
+
+.content-rdv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.coordinates {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #222329;
+    color: #fff;
+    text-align: center;
+    height: 400px;
+    width: 471px;
+}
+
+.title-rdv {
+    font-size: 1.8em;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.4;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.text-rdv {
+    font-family: Roboto, Sans-serif;
+    font-size: 1.2em;
+    letter-spacing: .05em;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.map {
+    height: 400px;
+    width: 471px
+}
+
+.button {
+    color: #000;
+    background-color: #fdf7f2;
+    border-color: transparent;
+    font-size: 1.1em;
+    display: inline-block;
+    -webkit-appearance: button;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.button:hover {
+    background-color: #da629e;
+    color: #fff;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.button:focus {
+    background-color: #da629e;
+    box-shadow: none
+}
+
+/*  */
+
+
+@media (max-width:992px) {
+
+    .coordinates {
+        height: 384px;
+        width: 28rem;
+    }
+
+    .map {
+        height: 384px;
+        width: 28rem;
+    }
+    
+    .title-rdv {
+        font-size: 1.75em;
+    }
+
+    .text-rdv {
+        font-size: 1.15em;
+    }
+
+
+}
+
+@media (max-width:900px) {
+
+    .coordinates {
+        height: 384px;
+        width: 26rem;
+    }
+
+    .map {
+        height: 384px;
+        width: 26rem;
+    }
+
+    .title-rdv {
+        font-size: 1.7em;
+    }
+
+    .text-rdv {
+        font-size: 1.1em;
+    }
+
+}
+@media (max-width:768px) {
+    .coordinates {
+        height: 384px;
+        width: 23.5rem;
+    }
+
+    .map {
+        height: 384px;
+        width: 23.5rem;
+    }
+
+    .title-rdv {
+        font-size: 1.4em;
+    }
+
+    .text-rdv {
+        font-size: .9em;
+    }
+}
