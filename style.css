@@ -42,6 +42,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    transition: all .5s ease-in;
     
 }
 
@@ -52,8 +53,9 @@ header {
     background-color: #222329;
     color: #fff;
     text-align: center;
-    height: 400px;
-    width: 471px;
+    height: 25rem;
+    width: 29.5rem;
+    transition: all .5s ease-in;
 }
 
 .title-rdv {
@@ -62,6 +64,7 @@ header {
     line-height: 1.4;
     margin-top: 0;
     margin-bottom: 0.5rem;
+    transition: all .5s ease-in;
 }
 
 .text-rdv {
@@ -71,11 +74,13 @@ header {
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: 1rem;
+    transition: all .5s ease-in;
 }
 
 .map {
-    height: 400px;
-    width: 471px
+    height: 25rem;
+    width: 29.5rem;
+    transition: all .5s ease-in;
 }
 
 .button {
@@ -116,15 +121,13 @@ header {
 
     
     .coordinates {
-        height: 384px;
+        height: 25rem;
         width: 28rem;
-        transition: all .2s linear;
     }
 
     .map {
-        height: 384px;
+        height: 25rem;
         width: 28rem;
-        transition: all .2s linear;
     }
     
     .title-rdv {
@@ -138,15 +141,15 @@ header {
 
 }
 
-@media (max-width:900px) {
+@media (max-width:925px) {
 
     .coordinates {
-        height: 384px;
+        height: 24rem;
         width: 26rem;
     }
 
     .map {
-        height: 384px;
+        height: 24rem;
         width: 26rem;
     }
 
@@ -158,16 +161,29 @@ header {
         font-size: 1.1em;
     }
 
+
+    @media (max-width:850px) {
+
+        .coordinates {
+            height: 23.5rem;
+            width: 24rem;
+        }
+    
+        .map {
+            height: 23.5rem;
+            width: 24rem;
+        }
+    
+
+
 }
 @media (max-width:768px) {
     .coordinates {
-        height: 384px;
-        width: 23.5rem;
+        width: 100%;
     }
 
     .map {
-        height: 384px;
-        width: 23.5rem;
+        width: 100%;
     }
 
     .title-rdv {
@@ -176,5 +192,11 @@ header {
 
     .text-rdv {
         font-size: .9em;
+    }
+    
+    .content-rdv{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
     }
 }
