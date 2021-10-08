@@ -31,6 +31,7 @@ header {
     background: url('home-background.jpg');
     width: 100%;
     transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    background-size: 125%;
 }
 
 /* ------------------------------------------------
@@ -206,5 +207,7 @@ header {
 
     #background-image {
         height: 48rem;
+}
+
 }
 }
